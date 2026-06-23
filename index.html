@@ -15,9 +15,15 @@
   <meta name="apple-mobile-web-app-title" content="Logbook" />
   <meta name="mobile-web-app-capable" content="yes" />
 
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     html, body { background: #0A0A0A; margin: 0; padding: 0; height: 100%; }
-    #root { min-height: 100vh; }
+    #root {
+      min-height: 100vh;
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+    }
   </style>
 </head>
 <body>
